@@ -1,0 +1,280 @@
+/**
+ * COScroll 滚动插件
+ */
+.cosroll-box{width:100%;height:100%;overflow:hidden;border:0;margin:0;padding:0}
+.cosroll-box .main{padding:1em}
+.COScroll{position:relative}
+.COScroll .x,.COScroll .y{position:absolute;background:#484642;background:rgba(0,0,0,.3)}
+.COScroll .x{width:100%;left:0;bottom:0}
+.COScroll .y{height:100%;top:0;right:0}
+.COScroll .x .thumb,.COScroll .y .thumb{position:absolute;background:#1E1E1C;background:rgba(0,0,0,.6);border-radius:5px}
+.COScroll .x .thumb{height:100%;bottom:0}
+.COScroll .y .thumb{width:100%;left:0}
+
+/**
+ * COModal 弹出层插件
+ */
+.comodal{-moz-box-shadow:0 1px 10px #adabab;-webkit-box-shadow:0 1px 10px #adabab;box-shadow:0 1px 10px #adabab;left:50%;top:50%;margin-right:0;margin-bottom:0;position:fixed;border-style:solid;background-color:#FFF}
+.comodal_header{position:relative}
+.comodal_header_border{border-bottom:1px solid #DDD}
+.comodal_title{padding:0 20px 0 15px}
+.comodal_title_move{cursor:move}
+.comodal_header_close_normal{position:absolute;opacity:.5;filter:alpha(opacity=50);top:15px;right:15px;width:20px;height:20px;cursor:pointer;background:url(../images/close20x20.png) no-repeat}
+.comodal_header_close_circle{position:absolute;opacity:1;filter:alpha(opacity=100);top:-16px;right:-16px;width:32px;height:32px;cursor:pointer;background:url(../images/close_circle_white32x32.png) no-repeat;z-index:888}
+.comodal_header_close_normal:hover{opacity:.8;filter:alpha(opacity=80)}
+.comodal .comodal_body{overflow:auto;float:none}
+.comodal_img_center{position:relative}
+.comodal_body_img_center{position:absolute;margin:auto;top:0;left:0;right:0;bottom:0}
+.comodal_footer{text-align:left;border-top:1px solid #DDD;padding:0 15px 0 15px}
+.comodalOverlay{display:none;width:100%;height:100%;position:fixed;top:0;left:0;background:#000;opacity:.7;filter:alpha(opacity=70)}
+.comodalLoadingImg{background:url(../images/loading38x38.gif) no-repeat center}
+.comodalLoadingText{width:100%;text-align:center;margin-top:8px}
+.COModal_drag{position:fixed;border:1px dotted #666;cursor:move;background-color:#fff;filter:alpha(opacity=50);opacity:.5}
+.comodal_iframe{padding:0;margin:0;border:0;outline:0;vertical-align:top;display:block;width:100%;height:100%}
+
+/**
+ * COSlide-simple 简版轮播 插件
+ */
+.coslide-simple{ position:relative; width:100%; overflow:hidden;}
+.coslide-simple ul.items{ width:100%;position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;}
+.coslide-simple ul.items li{ width:100%;float:left; background:none; list-style:none; padding:0px; margin:0px;}
+.coslide-simple ul.items li a{ width:100%;float:left; line-height:normal !important; padding:0px !important; border:none;}
+.coslide-simple ul.items li a img{ width:100%;margin:0px !important;padding:0px !important; display:block; border:none;}
+.coslide-simple div.tips{ position:absolute; bottom:0px; width:100%; height:50px; background-color:#000; overflow:hidden;}
+.coslide-simple div.tips div.title{ position:absolute; left:0px; top:0px; height:100%;}
+.coslide-simple div.tips div.title a{ color:#FFF; font-size:18px; line-height:50px; margin-left:10px; text-decoration:none;}
+.coslide-simple div.tips div.title a:hover{ color:#093 !important;}
+.coslide-simple div.tips div.nums{ position:absolute; right:0px; top:0px; height:100%;}
+.coslide-simple div.tips div.nums a{ display:inline-block;float:left; width:20px; height:20px; background-color:#FFF; text-indent:-99999px; margin:15px 10px 0px 0px;}
+.coslide-simple div.tips div.nums a.active{ background-color:#093;}
+
+/**
+ * COSlide3D 3D轮播 插件
+ */
+.coslide-3d{height:300px;width:100%;background-color:#e0e0e0;position:relative;}
+.coslide-3d img{border:3px solid #fff;}
+.coslide-3d .feature{position:absolute;top:-1000px;left:-1000px;border:0;cursor:pointer;}
+.coslide-3d .feature div{position:absolute;bottom:0;left:0;background-color:#000;width:100%;border:3px solid #fff;border-top:0;}
+.coslide-3d .feature div p{margin:0;padding:5px;font-weight:700;font-size:12px;color:#fff;}
+.coslide-3d .blipsContainer{position:absolute;color:#fff;right:10px;bottom:10px;padding:0;margin:0;}
+.coslide-3d .blipsContainer .blip{margin:3px;height:14px;width:14px;color:#fff;text-align:center;font-size:10px;border:1px dotted #000;}
+.coslide-3d .blipsContainer .blipSelected{color:#fff;font-weight:700;background-color:#000;}
+
+/**
+ * COSlideCircle 圆形轮播 插件
+ */
+.coslide-circle{position:relative;width:400px;height:400px;border:10px solid #cc2724;border-radius:50%;margin:0 auto;-webkit-perspective:1200px;-moz-perspective:1200px;perspective:1200px}
+.coslide-circle nav{top:0;height:100%;width:100%;position:absolute;z-index:10000}
+.coslide-circle nav>div{position:absolute;height:100%;top:0;width:50%}
+.coslide-circle nav .cosc-left{left:0}
+.coslide-circle nav .cosc-right{right:0}
+.coslide-circle nav>div span{height:33%;width:100%;position:absolute;left:0;cursor:pointer}
+.coslide-circle nav>div span:first-child{top:0}
+.coslide-circle nav>div span:nth-child(2){top:33%}
+.coslide-circle nav>div span:nth-child(3){top:66%}
+.coslide-circle nav i,.no-csstransforms3d .coslide-circle nav>div span{position:absolute;width:100%;height:40px;top:50%;margin-top:-20px;pointer-events:none;opacity:0;-webkit-backface-visibility:hidden;-webkit-transition:all .2s ease;-moz-backface-visibility:hidden;-moz-transition:all .2s ease;backface-visibility:hidden;transition:all .2s ease}
+.no-csstransforms3d .coslide-circle nav>div span{z-index:1000;width:40px;background:rgba(0,0,0,0)}
+.no-csstransforms3d .coslide-circle nav .cosc-left span{left:-80px}
+.no-csstransforms3d .coslide-circle nav .cosc-right span{right:-80px;left:auto}
+.no-csstransforms3d .coslide-circle nav i{width:40px;cursor:pointer}
+.coslide-circle nav .cosc-left i{-webkit-transform-origin:100% 50%;-moz-transform-origin:100% 50%;transform-origin:100% 50%;text-align:left}
+.coslide-circle nav .cosc-right i{-webkit-transform-origin:0 50%;-moz-transform-origin:0 50%;transform-origin:0 50%;text-align:right}
+.coslide-circle nav i.icon-arrow-left{left:0}
+.no-csstransforms3d .coslide-circle nav i.icon-arrow-left{left:-100px}
+.coslide-circle nav i.icon-arrow-right{right:0}
+.no-csstransforms3d .coslide-circle nav i.icon-arrow-right{right:-60px}
+.icon-arrow-left:before,.icon-arrow-right:before{font-family:entypo;speak:none;font-style:normal;font-weight:400;font-size:20px;background:#cc2724;color:#fff;width:40px;height:40px;line-height:40px;text-align:center;display:inline-block;margin:0 20px;border-radius:20% 10% 50% 5%/25% 10% 30% 75%;-webkit-font-smoothing:antialiased}
+.icon-arrow-left:before{content:"\003C"}
+.icon-arrow-right:before{content:"\003E"}
+.csstransforms3d .coslide-circle nav>div span:hover~i,.no-csstransforms3d .coslide-circle nav i,.no-csstransforms3d .coslide-circle nav>div span{opacity:1}
+.csstransforms3d .coslide-circle nav>div span:nth-child(2):hover~i{-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
+.csstransforms3d .coslide-circle nav>.cosc-left span:first-child:hover~i,.csstransforms3d .coslide-circle nav>.cosc-right span:nth-child(3):hover~i{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg)}
+.csstransforms3d .coslide-circle nav>.cosc-left span:nth-child(3):hover~i,.csstransforms3d .coslide-circle nav>.cosc-right span:first-child:hover~i{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg)}
+ul.cosc-slides{list-style:none;margin:0;padding:0}
+ul.cosc-slides li{display:none}
+.no-js ul.cosc-slides li{display:block}
+.cosc-flip{width:100%;height:100%;border-radius:50%;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d}
+.cosc-flip div{width:100%;height:100%;position:absolute;border-radius:50%;top:0;left:0;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden}
+.cosc-flip .cosc-back{-webkit-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);transform:rotateY(-180deg)}
+.coslide-circle img{border-radius:50%}
+.coslide-circle h3{position:absolute;color:#fff;top:50%;margin-top:30px;line-height:50px;height:50px;left:80px;right:80px;background:#ff514c;font-size:22px;text-transform:uppercase;letter-spacing:2px;text-align:center;border-radius:20% 10% 50% 5%/25% 10% 30% 75%}
+.cosc-overlay-dark,.cosc-overlay-light{opacity:0}
+.cosc-overlay-light{background:rgba(255,255,255,1)}
+.cosc-overlay-dark{background:rgba(0,0,0,1)}
+.no-js .coslide-circle{height:auto;box-shadow:none}
+.no-js .coslide-circle h3{position:relative;width:auto;height:auto;left:auto;right:auto;top:auto;margin:5px}
+.coslide-circle.cosc-sm{width:300px;height:300px;}
+.coslide-circle.cosc-sm .icon-arrow-left:before,.coslide-circle.cosc-sm .icon-arrow-right:before{font-size:20px;width:30px;height:30px;font-size:18px;line-height:30px;}
+.coslide-circle.cosc-sm h3{line-height:40px;height:40px;}
+.coslide-circle.cosc-xs{width:200px;height:200px;border-width:7px;}
+.coslide-circle.cosc-xs .icon-arrow-left:before,.coslide-circle.cosc-xs .icon-arrow-right:before{display:none;}
+.coslide-circle.cosc-xs h3{line-height:30px;height:30px;font-size:14px;left:45px;right:45px;font-weight:200;}
+.coslide-circle.cosc-ty{width:120px;height:120px;border-width:6px;}
+.coslide-circle.cosc-ty .icon-arrow-left:before,.coslide-circle.cosc-ty .icon-arrow-right:before{display:none;}
+.coslide-circle.cosc-ty h3{line-height:20px;height:20px;font-size:12px;left:15px;right:15px;font-weight:200;}
+.coslide-circle.cosc-primary{border-color:#2894FF;}
+.coslide-circle.cosc-primary .icon-arrow-left:before,.coslide-circle.cosc-primary .icon-arrow-right:before{background-color:#2894FF;}
+.coslide-circle.cosc-primary h3{background-color:#0000E3;}
+.coslide-circle.cosc-premium{border-color:#3c3c3c;}
+.coslide-circle.cosc-premium .icon-arrow-left:before,.coslide-circle.cosc-premium .icon-arrow-right:before{background-color:#3c3c3c;}
+.coslide-circle.cosc-premium h3{background-color:#000;}
+.coslide-circle.cosc-grand{border-color:#FFAF60;}
+.coslide-circle.cosc-grand .icon-arrow-left:before,.coslide-circle.cosc-grand .icon-arrow-right:before{background-color:#FFAF60;}
+.coslide-circle.cosc-grand h3{background-color:#EA7500;}
+.coslide-circle.cosc-dew{border-color:#D2E9FF;}
+.coslide-circle.cosc-dew .icon-arrow-left:before,.coslide-circle.cosc-dew .icon-arrow-right:before{background-color:#D2E9FF;}
+.coslide-circle.cosc-dew h3{background-color:#ACD6FF;}
+
+/**
+ * COMenuDrop 多级菜单 插件
+ */
+.comenu-drop{background:white;height:30px;margin:0;padding:0;position:relative;}
+.comenu-drop a{text-decoration:none;color:#777;font-family: 'MuseoSlab500Regular', arial, helvetica, sans-serif; text-shadow: none; text-decoration: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;  margin: 0; padding: 0 12px; display: block; background: none; position: relative; z-index: 20; font-size: 14px; font-weight: normal; line-height: 18px; background: none repeat scroll 0 0 transparent; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; height:30px;}
+.comenu-drop a:hover{color:#169FE6;line-height:30px;}
+.comenu-drop li{list-style-type:none;display:block;float:left;position:relative;height:30px;}
+.comenu-drop .active a:first{color:#169FE6;}
+.comenu-drop .sub-nav{padding:0;display:none;position:absolute;left:10px;top:30px;width:120px;z-index:100;}
+.comenu-drop .sub-nav li{position:relative;display:block;width:120px;height:30px;padding:0;border-top:1px solid #ECF5FF;border-radius:5px;border-top-radius:0;border-top-left-radius:0;border-top-right-radius:0;}
+.comenu-drop .sub-nav li a{display:block;width:120px;height:30px;line-height:30px;padding:0;text-indent:1em;overflow:hidden;background-color:white;border-radius:5px;color:#777;}
+.comenu-drop .sub-nav li a:hover{background-color:#ECF5FF;color:#000;}
+.comenu-drop .sub-nav ul{padding:0;display:none;position:absolute;left:120px;top:7px;}
+.comenu-drop .sub-nav ul li{position:relative;display:block;width:120px;height:30px;padding:0;}
+.comenu-drop .sub-nav,.comenu-drop .sub-nav ul{border:1px solid #169FE6;border-top:3px solid #169FE6;border-right-bottom-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left-bottom-radius:5px;background-color:white;}
+.comenu-drop.comenu-vertical li{float:left;clear:left;width:120px;text-align:right;}
+.comenu-drop.comenu-vertical .sub-nav{left:119px;top:7px;text-align:left;}
+.comenu-drop.comenu-vertical .sub-nav li{text-align:left;}
+.comenu-drop .mobile-menu:before{content:"\2720";}
+.comenu-drop .mobile-menu{ width:35px;height:35px;border:2px solid #ccc;border-radius:5px;background:#f0f0f0;float:right;cursor:pointer;display:none;color:#ccc;line-height:30px;font-size:24px;font-weight:900;text-align:center;}
+.comenu-drop .mobile-menu-list{position:absolute;right:5px;top:40px;width:200px;border:2px solid #ccc;border-radius:3px;background-color:#f0f0f0;color:#adadad;display:none;}
+.comenu-drop .mobile-menu-list .mobile-menu-ul{width:100%;background-color:#f0f0f0;color:#adadad;}
+.comenu-drop .mobile-menu-list .mobile-menu-ul .item{width:100%;background-color:#f0f0f0;color:#adadad;border-bottom:1px dashed #e0e0e0;}
+.comenu-drop .mobile-menu-list .mobile-menu-ul .item:last-child{border-bottom:0;}
+
+/**
+ * COMenuArc 弧形展开菜单 插件
+ */
+.comenu-arc{position:fixed;}
+.comenu-arc .comenu-arc-list{list-style-type:none;position:absolute;top:0;left:0;margin:0;padding:0;text-align:center;cursor:pointer;border-radius:50%;}
+.comenu-arc .comenu-arc-list .comenu-arc-main{margin:0;padding:0;text-align:center;cursor:pointer;border-radius:50%;position:absolute;top:0;left:0;text-align:center;z-index:20;}
+.comenu-arc .comenu-arc-list>li{position:absolute;width:100%;height:100%;border-radius:50%;-webkit-border-radius:50%;transition:all .6s;-webkit-transition:all .6s;-moz-transition:.6s;z-index:15;}
+.comenu-arc .comenu-arc-list .comenu-arc-main:after{content:attr(data-close);border-radius:50%;-webkit-border-radius:50%;}
+.comenu-arc .comenu-arc-list .comenu-arc-main.active:after{content:attr(data-open);}
+.comenu-arc .comenu-arc-list li a{display:block;border-radius:50%;-webkit-border-radius:50%;text-decoration:none;font-size:0.8em;}   
+
+/**
+ * COMenuPiano 钢琴按键菜单 插件
+ */
+.comenu-piano{position:relative;float:left}
+.comenu-piano ul{list-style:none;display:block;width:200px;position:relative;padding:30px 0 30px 0;background:url('../images/pre-shad.png') no-repeat;-webkit-background-size:50% 100%;}
+.comenu-piano li{margin:5px 0 0 0;}
+.comenu-piano ul li a{-webkit-transition:all .3s ease-out;background:#cbcbcb url('../images/pre-border.png') no-repeat;color:#174867;padding:7px 15px 7px 15px;-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;width:100px;display:block;text-decoration:none;-webkit-box-shadow:2px 2px 4px #888;}
+.comenu-piano ul li a:hover{background:#ebebeb url('../images/pre-border.png') no-repeat;color:#67a5cd;padding:7px 15px 7px 30px;width:115px;}
+
+/**
+ * COMenuTree 树状菜单 插件
+ */
+.comenu-tree,.comenu-tree ul{padding:0;margin:0;list-style:none}
+.comenu-tree ul{margin-top:4px}
+.comenu-tree .hitarea{background:url(../images/tree-icons/treeview-default.gif) -64px -25px no-repeat;height:16px;width:16px;margin-left:-16px;float:left;cursor:pointer}
+* html .hitarea{display:inline;float:none}
+.comenu-tree li{line-height:12px;margin:0;padding:3px 0 3px 16px}
+.comenu-tree .hover{color:#2F96B4;cursor:pointer}
+.comenu-tree li{background:url(../images/tree-icons/treeview-default-line.gif) 0 0 no-repeat}
+.comenu-tree li.collapsable,.comenu-tree li.expandable{background-position:0 -176px}
+.comenu-tree .expandable-hitarea{background-position:-80px -3px}
+.comenu-tree li.last{background-position:0 -1766px}
+.comenu-tree li.lastCollapsable,.comenu-tree li.lastExpandable{background-image:url(../images/tree-icons/treeview-default.gif)}
+.comenu-tree li.lastCollapsable{background-position:0 -111px}
+.comenu-tree li.lastExpandable{background-position:-32px -67px}
+.comenu-tree div.lastCollapsable-hitarea,.comenu-tree div.lastExpandable-hitarea{background-position:0}
+.tree-control{margin:0 0 10px;display:none}
+.tree-control a{color:#2F96B4;font-size:11px;padding-right:15px;vertical-align:middle}
+.comenu-tree.comenu-tree-blue .hitarea,.comenu-tree.comenu-tree-blue li.lastCollapsable,.comenu-tree.comenu-tree-blue li.lastExpandable{background-image:url(../images/tree-icons/treeview-red.gif)}
+.comenu-tree.comenu-tree-blue li{background-image:url(../images/tree-icons/treeview-red-line.gif)}
+.comenu-tree.comenu-tree-black li span,.comenu-tree.comenu-tree-gray li span{line-height:13px;padding-left:3px}
+.comenu-tree.comenu-tree-black li{background-image:url(../images/tree-icons/treeview-black-line.gif)}
+.comenu-tree.comenu-tree-black .hitarea,.comenu-tree.comenu-tree-black li.lastCollapsable,.comenu-tree.comenu-tree-black li.lastExpandable{background-image:url(../images/tree-icons/treeview-black.gif)}
+.comenu-tree .placeholder{background:url(../images/tree-icons/ajax-loader.gif) 0 0 no-repeat;height:16px;width:16px;display:block}
+.comenu-tree li a,.comenu-tree.comenu-tree-blue li span,.comenu-tree.comenu-tree-file span{color:#777;line-height:13px;padding-left:3px}
+.comenu-tree.comenu-tree-file li{padding:3px 0 2px 16px}
+.comenu-tree.comenu-tree-file span.file,.comenu-tree.comenu-tree-file span.folder{padding:1px 0 1px 21px;display:block}
+.comenu-tree.comenu-tree-file span.folder{background:url(../images/tree-icons/folder.png) 0 0 no-repeat}
+.comenu-tree.comenu-tree-file li.expandable span.folder{background:url(../images/tree-icons/folder-closed.png) 0 0 no-repeat}
+.comenu-tree.comenu-tree-file span.file{background:url(../images/tree-icons/file.png) 0 0 no-repeat}
+
+
+/**
+ * COSelectCity 省市县三级联动 插件
+ */
+.coselect-city *{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline;border-radius:0;}
+.coselect-city a:hover{text-decoration:none;}
+.coselect-city .item{border:1px solid #ccc;width:200px;height:36px;line-height:36px;float:left;margin-right:20px;position:relative}
+.coselect-city .item:after{content:'';border-right:6px solid transparent;border-left:6px solid transparent;border-top:6px solid #ccc;display:block;width:0;height:0;position:absolute;top:15px;right:5px}
+.coselect-city .selector{color:#333;font-size:16px;display:block;text-indent:5%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+.coselect-city .selector.df-color{color:#999}
+.coselect-city .selector.forbid{cursor:not-allowed}
+.coselect-city .selector-list{border:1px solid #ccc;background:#fff;width:100%;position:absolute;top:36px;left:-1px;z-index:1}
+.coselect-city ul{max-height:160px;overflow-x:hidden;overflow-y:auto}
+.coselect-city li{border-top:1px solid #ccc;color:#333;cursor:pointer;width:100%;padding:0 5%;height:30px;line-height:30px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+.coselect-city li:first-child{border-top:none}
+.coselect-city li.caller:hover{background:#f5f5f5}
+.coselect-city li.caller.active,.coselect-city li.caller.active:hover{background:#3A8EAF;color:#fff}
+.coselect-city li.forbid{color:#999;font-size:14px;cursor:not-allowed}
+.coselect-city .selector-search{border:1px solid #ccc;border-top:none;background:#f8f8f8;font-size:0;padding:10px 10px 8px 10px;height:46px;margin-left:-1px;margin-right:-1px;overflow:hidden;}
+.coselect-city .input-search{border:1px solid #ccc;border-radius:5px;color:#333;font-size:14px;width:100%;height:26px;line-height:26px;padding:0;text-indent:5px;display:inline-block;}
+.coselect-city .input-search:focus{outline:0}
+.coselect-city .hide{display:none}
+.coselect-city select{border:1px solid #ccc;background:#fff;border-radius:5px;color:#333;font-size:16px;outline:0;width:160px;height:36px;margin-right:10px;box-shadow:0 0 5px #eee}
+
+/**
+ * COSelectCity Coolouch 表单
+ */
+.coform label{display:inline;margin:0;cursor:pointer;}
+.coform {font-size:14px;}
+.coform .tag{line-height:40px;font-size:16px;font-weight:600;}
+.coform .checkbox-item{display:none}
+.coform .checkbox-item+label{background-color:#fafafa;border:1px solid #cacece;box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 -15px 10px -12px rgba(0,0,0,.05);padding:9px;border-radius:3px;display:inline-block;position:relative}
+.coform .checkbox-item+label:active,.coform .checkbox-item:checked+label:active{box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 1px 3px rgba(0,0,0,.1)}
+.coform .checkbox-item:checked+label{background-color:#e9ecee;border:1px solid #adb8c0;box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 -15px 10px -12px rgba(0,0,0,.05),inset 15px 10px -12px rgba(255,255,255,.1);color:#99a1a7}
+.coform .checkbox-item:checked+label:after{content:'\2714';font-size:14px;position:absolute;top:0;left:3px;color:#99a1a7}
+.coform .big-checkbox+label{padding:18px}
+.coform .big-checkbox:checked+label:after{font-size:28px;left:6px}
+.coform .radio-item{display:none}
+.coform .radio-item+label{-webkit-appearance:none;background-color:#fafafa;border:1px solid #cacece;box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 -15px 10px -12px rgba(0,0,0,.05);padding:9px;border-radius:50px;display:inline-block;position:relative}
+.coform .radio-item:checked+label:after{content:' ';width:12px;height:12px;border-radius:50px;position:absolute;top:3px;background:#99a1a7;box-shadow:inset 0 0 10px rgba(0,0,0,.3);text-shadow:0;left:3px;font-size:32px}
+.coform .radio-item:checked+label{background-color:#e9ecee;color:#99a1a7;border:1px solid #adb8c0;box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 -15px 10px -12px rgba(0,0,0,.05),inset 15px 10px -12px rgba(255,255,255,.1),inset 0 0 10px rgba(0,0,0,.1)}
+.coform .radio-item+label:active,.coform .radio-item:checked+label:active{box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 1px 3px rgba(0,0,0,.1)}
+.coform .big-radio+label{padding:16px}
+.coform .big-radio:checked+label:after{width:24px;height:24px;left:4px;top:4px}
+
+/**
+ * COAccordion 手风琴
+ */
+.cotext-accordion { width:100%;}
+.cotext-accordion .text { display:none;background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #F0F0F0; padding:22px 7px 7px 22px; }
+.cotext-accordion .text .img-border { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #E7E7E7; display: inline-block; float: left; margin: 4px 20px 0 0; padding: 5px; }
+.cotext-accordion .text p { margin-bottom:15px; border:none; text-decoration:none;color:#888888;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:22px;}
+.cotext-accordion .title { background-image: linear-gradient(bottom, #F7F7F7 0%, #FFFFFF 100%); background-image: -o-linear-gradient(bottom, #F7F7F7 0%, #FFFFFF 100%); background-image: -moz-linear-gradient(bottom, #F7F7F7 0%, #FFFFFF 100%); background-image: -webkit-linear-gradient(bottom, #F7F7F7 0%, #FFFFFF 100%); background-image: -ms-linear-gradient(bottom, #F7F7F7 0%, #FFFFFF 100%); background-color: #F9F9F9; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow:0px 1px 1px 0px rgba(180, 180, 180, 0.1); -moz-box-shadow:0px 1px 1px 0px rgba(180, 180, 180, 0.1); box-shadow:0px 1px 1px 0px rgba(180, 180, 180, 0.1); cursor:pointer;display:block; padding: 0; margin-top:-1px; font-family: 'MuseoSlab500Regular', arial, helvetica, sans-serif; font-size: 13px; font-weight:bold; border:1px solid #DDDDDD; text-shadow: 0 1px 1px #FFFFFF; text-decoration:none;color:#888888;}
+.cotext-accordion .title:hover { background: #eee; }
+.cotext-accordion .title span:hover { color:#333;}
+.cotext-accordion .title span { background: url("../images/accordion-open.png") no-repeat scroll right center transparent; display:block; padding:10px 22px; color:#888888;}
+.cotext-accordion .title.active span { color:#333;background: url("../images/accordion-close.png") no-repeat scroll right center transparent; display:block; padding:10px 22px; }
+.cotext-accordion .active-div{display:block;}
+
+/*
+ *Coolouch Jump Text 动态文字
+ */
+.cotext-jump{position:relative;margin:20px;}
+.cotext-jump *{cursor:pointer;}
+.cotext-jump .beat-char {line-height: 3.4em;position: relative;display: inline-block;background: transparent;}
+.cotext-jump .rotate{transform:rotate(360deg);-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);-webkit-transition-duration: 0.7s;}
+
+/*
+ *Coolouch Hover Text 滑动文本
+ */
+.cotext-hover{background:#FFF;padding:8px;position:relative;box-shadow:0 1px 3px rgba(221,221,221,1);}
+.cotext-hover .text-box,.cotext-hover .text-box img{display:block;position:relative;width:100%}
+.cotext-hover .text-box{overflow:hidden;text-decoration:none}
+.cotext-hover .text-box div{position:absolute;background:rgba(6,144,56,.85);width:100%;height:100%;padding:5%;color:white;font-size:1em;font-weight:400;}
+ul.cotext-hover-container{list-style:none;position:relative;margin:0;padding:0;}
+li.cotext-hover{float:left;margin:1.2%;background:#FFF;padding:8px;position:relative;box-shadow:0 1px 3px rgba(221,221,221,1);width:30%}
