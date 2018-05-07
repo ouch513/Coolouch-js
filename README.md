@@ -19,8 +19,8 @@ Coolouch is just at the start, it will get more and more perfect, better with Bo
   
 ## 文档 Document
 
-使用文档和实例演示 请查看: [Coolouch](http://ywym.xmwamf.com/coolouch/index.html)  
-View the documnents and demos at [Coolouch](http://ywym.xmwamf.com/coolouch/index.html)
+使用文档和实例演示 请查看: [Coolouch](http://http://119.29.74.135)  
+View the documnents and demos at [Coolouch](http://http://119.29.74.135)
   
   
 ## 调用 Usage
